@@ -3,14 +3,18 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./components/header/Header";
+import Info from "./components/info/Info";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header  />
-      Hello, here is Benes Blog
+      <Header />
+      <div className="fade-top"></div>
+      <Info />
+
+      <div className="blur-bottom"></div>
     </>
   );
 }
