@@ -1,0 +1,59 @@
+.recent-posts {
+  position: relative;
+  max-width: 600px;
+  margin: 0;
+  padding: 2rem;
+  text-align: left;
+}
+
+.recent-posts .header {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.recent-posts .header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+.recent-posts .button {
+    flex: 0;
+    min-width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin-left: auto;
+}
+
+.recent-posts .button .arrow {
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+
+
+
+.recent-posts .button:hover .arrow {
+    transform: rotate(360deg);
+}

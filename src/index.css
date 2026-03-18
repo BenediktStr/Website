@@ -36,6 +36,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 
@@ -149,3 +150,6 @@ button:focus-visible {
   border: none;
   margin: 1.5rem auto;
 }
+
+/* Recent Posts Styling */
+

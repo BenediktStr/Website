@@ -1,6 +1,7 @@
 import React from "react";
 import PostCard from "./PostCard";
 import usePosts from "../../hooks/usePost";
+import "./RecentPost.css";
 
 export default function RecentPosts() {
   const { posts, loading, getRecentPosts } = usePosts();
@@ -11,7 +12,13 @@ export default function RecentPosts() {
 
   return (
     <div className="recent-posts">
-      <h2>Recent Posts</h2>
+      <div className="header">
+        <h2>New posts</h2>
+        <button className="button">
+          All posts
+          <span className="arrow">→</span>
+        </button>
+      </div>
       {recentPosts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
