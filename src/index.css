@@ -151,5 +151,14 @@ button:focus-visible {
   margin: 1.5rem auto;
 }
 
+/* Page Container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+}
+
 /* Recent Posts Styling */
 

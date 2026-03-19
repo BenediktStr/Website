@@ -20,11 +20,23 @@ export default function usePosts() {
     fetchPosts();
   }, []);
 
+  const getPostWithContent = async (id) => {
+    try {
+      const response = await fetch(`/src/data/posts/${id}.json`);
+      const postData = await response.json();
+      return postData;
+    } catch (error) {
+      console.error(`Error loading post ${id}:`, error);
+      return null;
+    }
+  };
+
   return {
     posts,
     loading,
     getRecentPosts: (count) => posts.slice(0, count),
     getAllPosts: () => posts,
     getById: (id) => posts.find((post) => post.id === id),
+    getPostWithContent,
   };
 }

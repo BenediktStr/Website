@@ -1,8 +1,8 @@
 .recent-posts {
   position: relative;
-  max-width: 600px;
+  width: min(600px, 100vw - 4rem);
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 2rem;
   text-align: left;
 }
 
@@ -24,7 +24,8 @@
     flex-shrink: 0;
 }
 
-.recent-posts .button {
+.recent-posts .button,
+.recent-posts .button:visited {
     flex: 0;
     min-width: 100px;
     height: 30px;
@@ -51,8 +52,6 @@
     transition: transform 0.3s ease;
     font-size: 1rem;
 }
-
-
 
 .recent-posts .button:hover .arrow {
     transform: rotate(360deg);

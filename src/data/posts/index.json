@@ -1,39 +1,11 @@
 {
   "posts": [
     {
-      "id": "post-5",
-      "slug": "mein-fünfter-post",
-      "title": "Mein erster Post",
-      "date": "2026-03-15",
-      "subtitle": "my fived try in blogging"
-    },
-    {
-      "id": "post-4",
-      "slug": "mein-vierter-post",
-      "title": "Mein erster Post",
-      "date": "2026-03-15",
-      "subtitle": "my fourth try in blogging"
-    },
-    {
-      "id": "post-3",
-      "slug": "mein-dritter-post",
-      "title": "Mein erster Post",
-      "date": "2026-03-15",
-      "subtitle": "my third try in blogging"
-    },
-    {
-      "id": "post-2",
-      "slug": "mein-zweiter-post",
-      "title": "Mein erster Post",
-      "date": "2026-03-15",
-      "subtitle": "my second try in blogging"
-    },
-    {
       "id": "post-1",
       "slug": "mein-erster-post",
-      "title": "Mein erster Post",
+      "title": "My first Post",
       "date": "2026-03-15",
-      "subtitle": "my first try in blogging"
+      "subtitle": "First Post in ..."
     }
   ]
 }

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  const [activelink, setActivelink] = useState("");
   const [currentTime, setCurrentTime] = useState(new Date());
+  const location = useLocation();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -28,27 +29,24 @@ const Header = () => {
           </div>
         </div>
         <div className="list">
-          <a
-            href="#home"
-            className={`nav-link ${activelink === "home" ? "active" : ""}`}
-            onClick={() => setActivelink("home")}
+          <Link
+            to="/"
+            className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
           >
             Home
-          </a>
-          <a
-            href="#blog"
-            className={`nav-link ${activelink === "blog" ? "active" : ""}`}
-            onClick={() => setActivelink("blog")}
+          </Link>
+          <Link
+            to="/blog"
+            className={`nav-link ${location.pathname === "/blog" ? "active" : ""}`}
           >
             Blog
-          </a>
-          <a
-            href="#contact"
-            className={`nav-link ${activelink === "contact" ? "active" : ""}`}
-            onClick={() => setActivelink("contact")}
+          </Link>
+          <Link
+            to="/contact"
+            className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`}
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </>

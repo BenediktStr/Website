@@ -3,10 +3,13 @@
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-    padding: 1rem 0;
+    padding: 1rem 5px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
     box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
 }
 
 .postcard .post-content {
@@ -31,4 +34,9 @@
     color: rgba(255, 255, 255, 0.5);
     white-space: nowrap;
     margin-left: 1rem;
+}
+
+.postcard:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
 }

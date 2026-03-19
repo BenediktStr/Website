@@ -1,0 +1,39 @@
+.blog-list {
+  position: relative;
+  width: min(600px, 100vw - 4rem);
+  margin: 0;
+  padding: 2rem 2rem;
+  text-align: left;
+}
+
+.blog-list .header {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.blog-list .header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+.blog-list .header .post-count {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.blog-list .posts-container {
+    width: 100%;
+}
+
+.blog-list .posts-container .postcard:last-child {
+    border-bottom: none;
+}
