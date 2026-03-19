@@ -7,7 +7,7 @@ export default function usePosts() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch("/src/data/posts/index.json");
+        const response = await fetch("/data/posts/index.json");
         const data = await response.json();
         setPosts(data.posts);
       } catch (error) {
@@ -22,7 +22,7 @@ export default function usePosts() {
 
   const getPostWithContent = async (id) => {
     try {
-      const response = await fetch(`/src/data/posts/${id}.json`);
+      const response = await fetch(`/data/posts/${id}.json`);
       const postData = await response.json();
       return postData;
     } catch (error) {
