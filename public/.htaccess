@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Browser Caching für bessere Performance
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Fonts und Assets
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  
+  # CSS und JS
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  
+  # Markdown und JSON - kurzes Caching
+  ExpiresByType text/markdown "access plus 1 hour"
+  ExpiresByType application/json "access plus 1 hour"
+  
+  # HTML - kein Caching
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>

@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function usePosts() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const contentCache = useRef({}); // Cache für geladene Post-Contents
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -21,6 +22,14 @@ export default function usePosts() {
   }, []);
 
   const getPostWithContent = async (id) => {
+    // Prüfe Cache zuerst
+    if (contentCache.current[id]) {
+      console.log(`✅ Post ${id} aus Cache geladen`);
+      return contentCache.current[id];
+    }
+
+    console.log(`⬇️ Post ${id} wird vom Server geladen...`);
+
     try {
       // Try loading a .md file first
       const mdResponse = await fetch(`/data/posts/content/${id}.md`);
@@ -28,15 +37,20 @@ export default function usePosts() {
         const mdContent = await mdResponse.text();
         // Find the post metadata from index
         const post = posts.find((p) => p.id === id);
-        return {
+        const postData = {
           ...post,
           content: mdContent,
         };
+        // Cache speichern
+        contentCache.current[id] = postData;
+        return postData;
       }
 
       // Fallback to JSON file
       const response = await fetch(`/data/posts/${id}.json`);
       const postData = await response.json();
+      // Cache speichern
+      contentCache.current[id] = postData;
       return postData;
     } catch (error) {
       console.error(`Error loading post ${id}:`, error);
