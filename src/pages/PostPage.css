@@ -75,11 +75,13 @@
 .post-content {
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.8);
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  letter-spacing: 0.3px;
 }
 
 .post-content p {
   margin: 0 0 1.5rem 0;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 /* Markdown Headings */
@@ -206,4 +208,78 @@
 .post-content del {
   text-decoration: line-through;
   opacity: 0.7;
+}
+
+/* PostPage Responsive */
+@media (max-width: 768px) {
+  .post-detail {
+    width: min(600px, 100vw - 2rem);
+    padding: 1.5rem 1rem;
+  }
+  .post-header h1 {
+    font-size: 2rem;
+  }
+  .post-header h3 {
+    font-size: 1.2rem;
+  }
+  .post-content h1 {
+    font-size: 1.8rem;
+  }
+  .post-content h2 {
+    font-size: 1.4rem;
+  }
+  .post-content h3 {
+    font-size: 1.2rem;
+  }
+  .post-content pre {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .post-content th,
+  .post-content td {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-detail {
+    width: 100vw;
+    padding: 1rem 0.75rem;
+  }
+  .post-header h1 {
+    font-size: 1.6rem;
+  }
+  .post-header h3 {
+    font-size: 1rem;
+  }
+  .post-content p {
+    font-size: 0.95rem;
+  }
+  .post-content h1 {
+    font-size: 1.5rem;
+  }
+  .post-content h2 {
+    font-size: 1.25rem;
+  }
+  .post-content h3 {
+    font-size: 1.1rem;
+  }
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.25rem;
+  }
+  .post-content blockquote {
+    margin-left: 0;
+    padding-left: 0.75rem;
+  }
+  .post-content pre {
+    border-radius: 6px;
+    padding: 0.6rem;
+  }
 }

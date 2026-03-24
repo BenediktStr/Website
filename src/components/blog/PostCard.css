@@ -40,3 +40,21 @@
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
 }
+
+/* PostCard Responsive */
+@media (max-width: 480px) {
+    .postcard {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .postcard .post-content h1 {
+        font-size: 1.05rem;
+    }
+    .postcard .post-content h3 {
+        font-size: 0.8rem;
+    }
+    .postcard .post-date {
+        margin-left: 0;
+        font-size: 0.75rem;
+    }
+}

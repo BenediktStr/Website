@@ -1,8 +1,6 @@
-/* Google Fonts - Neuton */
-
 :root {
   font-family: 'Neuton', Georgia, 'Times New Roman', serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
 
@@ -31,6 +29,31 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+/* Responsive Base */
+@media (max-width: 768px) {
+  :root {
+    font-size: 17px;
+  }
+  body {
+    padding-top: 70px;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 16px;
+  }
+  body {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
 }
 
 button {

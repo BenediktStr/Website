@@ -56,3 +56,21 @@
 .recent-posts .button:hover .arrow {
     transform: rotate(360deg);
 }
+
+/* RecentPosts Responsive */
+@media (max-width: 768px) {
+    .recent-posts {
+        width: min(600px, 100vw - 2rem);
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .recent-posts {
+        width: 100vw;
+        padding: 1rem 0.75rem;
+    }
+    .recent-posts .header h2 {
+        font-size: 1.3rem;
+    }
+}

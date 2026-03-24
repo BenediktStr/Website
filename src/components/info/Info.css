@@ -5,3 +5,16 @@
     padding: 2rem 2rem;
     text-align: left;
 }
+
+/* Info Responsive */
+@media (max-width: 768px) {
+    .info {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        padding: 1rem 0.75rem;
+    }
+}

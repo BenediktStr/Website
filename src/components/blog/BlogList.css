@@ -37,3 +37,21 @@
 .blog-list .posts-container .postcard:last-child {
     border-bottom: none;
 }
+
+/* BlogList Responsive */
+@media (max-width: 768px) {
+    .blog-list {
+        width: min(600px, 100vw - 2rem);
+        padding: 1.5rem 1rem;
+    }
+    .blog-list .header h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-list {
+        width: 100vw;
+        padding: 1rem 0.75rem;
+    }
+}
