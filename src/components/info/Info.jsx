@@ -5,8 +5,9 @@ const Info = () => {
     <div className="info">
       <h3>Welcome</h3>
       <p>
-        Hi, I'm Benedikt, a software developer who is transitioning to focus
-        more on DevOps. My goal here is to share my thoughts along the journey.
+        Hi, I'm Benedikt, a Fullstack Developer evolving into DevOps. Here I
+        write about bridging the gap between development and operations, and
+        what I learn along the way.
         <br />
         Enjoy :)
       </p>

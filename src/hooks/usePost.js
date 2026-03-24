@@ -22,6 +22,19 @@ export default function usePosts() {
 
   const getPostWithContent = async (id) => {
     try {
+      // Try loading a .md file first
+      const mdResponse = await fetch(`/data/posts/content/${id}.md`);
+      if (mdResponse.ok) {
+        const mdContent = await mdResponse.text();
+        // Find the post metadata from index
+        const post = posts.find((p) => p.id === id);
+        return {
+          ...post,
+          content: mdContent,
+        };
+      }
+
+      // Fallback to JSON file
       const response = await fetch(`/data/posts/${id}.json`);
       const postData = await response.json();
       return postData;

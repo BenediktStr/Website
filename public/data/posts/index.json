@@ -2,10 +2,10 @@
   "posts": [
     {
       "id": "post-1",
-      "slug": "mein-erster-post",
-      "title": "My first Post",
-      "date": "2026-03-15",
-      "subtitle": "First Post in ..."
+      "slug": "first-blog-post",
+      "title": "The Plan",
+      "date": "2026-03-24",
+      "subtitle": "First Blog Post"
     }
   ]
 }

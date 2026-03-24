@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import usePosts from "../hooks/usePost";
 import "./PostPage.css";
 
@@ -46,7 +48,9 @@ export default function PostPage() {
           <small className="post-date">{post.date}</small>
         </div>
         <div className="post-content">
-          <p>{postDetail.content || "Post content coming soon..."}</p>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {postDetail.content || "Post content coming soon..."}
+          </ReactMarkdown>
         </div>
       </div>
       <div className="blur-bottom"></div>
