@@ -1,6 +1,6 @@
 # First Blog Post
 
-Welcome to my creative journey. This is where I tinker with ideas, work through challenges, and write about the things that captivate me—from personal to professional. I want to start with my professional life, because there have been and continue to be challenges along the way.
+Welcome to my creative journey. This is where I tinker with ideas, work through challenges, and write about the things that captivate me from personal to professional. I want to start with my professional life, because there have been and continue to be challenges along the way.
 
 I am a **Fullstack Developer**, but I have quickly discovered my biggest challenge: *too many interests* within software engineering alone. Frontend, Backend, Crypto, or DevOps you name it, I am drawn to all of them.
 
