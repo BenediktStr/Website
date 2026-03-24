@@ -56,8 +56,7 @@
 .post-header h1 {
   margin: 0 0 0.5rem 0;
   font-size: 2.5rem;
-  font-weight: 700;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -74,22 +73,21 @@
 }
 
 .post-content {
-  line-height: 1.8;
+  line-height: 1.75;
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Courier Prime', 'Courier New', monospace;
-  letter-spacing: 0.3px;
+  font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0px;
 }
 
 .post-content p {
   margin: 0 0 1.5rem 0;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 /* Markdown Headings */
 .post-content h1 {
   font-size: 2.2rem;
-  font-weight: 700;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
   margin: 2rem 0 1rem 0;
   color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -98,8 +96,7 @@
 
 .post-content h2 {
   font-size: 1.75rem;
-  font-weight: 700;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
   margin: 1.5rem 0 0.8rem 0;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -107,7 +104,6 @@
 .post-content h3 {
   font-size: 1.4rem;
   font-weight: 500;
-  font-family: 'Playfair Display', Georgia, serif;
   margin: 1.2rem 0 0.6rem 0;
   color: rgba(255, 255, 255, 0.85);
 }
