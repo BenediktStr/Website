@@ -56,7 +56,8 @@
 .post-header h1 {
   margin: 0 0 0.5rem 0;
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -87,7 +88,8 @@
 /* Markdown Headings */
 .post-content h1 {
   font-size: 2.2rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
   margin: 2rem 0 1rem 0;
   color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -96,14 +98,16 @@
 
 .post-content h2 {
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
   margin: 1.5rem 0 0.8rem 0;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .post-content h3 {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Playfair Display', Georgia, serif;
   margin: 1.2rem 0 0.6rem 0;
   color: rgba(255, 255, 255, 0.85);
 }
