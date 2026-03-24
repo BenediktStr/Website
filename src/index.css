@@ -1,27 +1,4 @@
-/* Local Neuton Font */
-@font-face {
-  font-family: 'Neuton';
-  src: url('/fonts/neuton-light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neuton';
-  src: url('/fonts/neuton-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neuton';
-  src: url('/fonts/neuton-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+/* Google Fonts - Neuton */
 
 :root {
   font-family: 'Neuton', Georgia, 'Times New Roman', serif;
