@@ -61,8 +61,12 @@ export default function usePosts() {
   return {
     posts,
     loading,
-    getRecentPosts: (count) => posts.slice(0, count),
-    getAllPosts: () => posts,
+    getRecentPosts: (count) =>
+      [...posts]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, count),
+    getAllPosts: () =>
+      [...posts].sort((a, b) => new Date(b.date) - new Date(a.date)),
     getById: (id) => posts.find((post) => post.id === id),
     getPostWithContent,
   };
