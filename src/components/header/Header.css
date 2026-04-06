@@ -24,7 +24,33 @@
     height: 40px;
     border-radius: 25%;
     object-fit: cover;
-    border: transparent solid 
+    border: transparent solid;
+    transition: opacity 0.2s ease;
+}
+
+.profilpicture:hover {
+    opacity: 0.8;
+}
+
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    cursor: pointer;
+}
+
+.image-overlay-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    object-fit: contain;
 }
 .userName {
     display: flex;

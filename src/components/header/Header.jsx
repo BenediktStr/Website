@@ -4,6 +4,7 @@ import "./Header.css";
 
 const Header = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [showImage, setShowImage] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -16,12 +17,23 @@ const Header = () => {
 
   return (
     <>
+      {showImage && (
+        <div className="image-overlay" onClick={() => setShowImage(false)}>
+          <img
+            src="/Profil.png"
+            alt="Profilbild von Benedikt Sträußl"
+            className="image-overlay-img"
+          />
+        </div>
+      )}
       <div className="header">
         <div className="user">
           <img
             src="/Profil.png"
             alt="Profilbild von Benedikt Sträußl"
             className="profilpicture"
+            onClick={() => setShowImage(true)}
+            style={{ cursor: "pointer" }}
           />
           <div className="userName">
             <p className="name">Benedikt Sträußl</p>
