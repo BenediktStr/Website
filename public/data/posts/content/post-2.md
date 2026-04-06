@@ -1,4 +1,4 @@
-# Are Certifications Worth It?
+
 
 A few days ago I passed the Microsoft Azure Administrator Exam after roughly 40 hours of studying. I use Azure on a daily basis in my day job, so I thought it would be a nice portfolio addition. But every day I studied, I thought: "Shouldn't I improve my real-world skills instead of passing some artificial exam?" It's only a certification, not that important, right?
 
